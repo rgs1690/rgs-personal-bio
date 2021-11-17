@@ -42,7 +42,7 @@ export default function ProjectForm({ project = {} }) {
     } else {
       createProject({ ...formInput }).then(() => {
         resetForm();
-        history.push('/projects');
+        history.push('/editProjectView');
       });
     }
   };
