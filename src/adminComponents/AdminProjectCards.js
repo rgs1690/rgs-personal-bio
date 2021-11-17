@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { deleteProject } from '../api/data/projectsData';
 
 export default function AdminProjectCards({ project, setProjects }) {
@@ -32,9 +33,12 @@ export default function AdminProjectCards({ project, setProjects }) {
           >
             DELETE
           </button>
-          <button type="button" className="btn btn-danger">
+          <Link
+            to={`/adminEditView/${project.firebaseKey}`}
+            className="btn btn-danger"
+          >
             UPDATE
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
-import { createProject } from '../api/data/projectsData';
+import { createProject, updateProject } from '../api/data/projectsData';
 
 const initialState = {
   projectName: '',
@@ -18,9 +18,10 @@ export default function ProjectForm({ project = {} }) {
       setFormInput({
         projectName: project.projectName,
         projectImage: project.projectImage,
-        projectAppUrl: project.AppUrl,
+        projectAppUrl: project.projectAppUrl,
         description: project.description,
         githubUrl: project.githubUrl,
+        firebaseKey: project.firebaseKey,
       });
     }
   }, [project]);
@@ -37,8 +38,9 @@ export default function ProjectForm({ project = {} }) {
   const handleClick = (e) => {
     e.preventDefault();
     if (project.firebaseKey) {
-      // update promise.then=>
-      history.push('/projects');
+      updateProject(formInput).then(() => {
+        history.push('/editProjectView');
+      });
     } else {
       createProject({ ...formInput }).then(() => {
         resetForm();
@@ -119,7 +121,5 @@ export default function ProjectForm({ project = {} }) {
 }
 
 ProjectForm.propTypes = {
-  project: PropTypes.shape({}),
+  project: PropTypes.shape({}).isRequired,
 };
-
-ProjectForm.defaultProps = { project: {} };
