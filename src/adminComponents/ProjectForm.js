@@ -60,7 +60,7 @@ export default function ProjectForm({ project = {} }) {
             id="projectName"
             placeholder="Project Name"
             value={formInput.projectName || ''}
-            onChange={(e) => handleChange(e)}
+            onChange={handleChange}
           />
         </div>
         <div className="form-group">
@@ -72,7 +72,7 @@ export default function ProjectForm({ project = {} }) {
             id="projectImage"
             placeholder="Project Image"
             value={formInput.projectImage || ''}
-            onChange={(e) => handleChange(e)}
+            onChange={handleChange}
           />
         </div>
         <div className="form-group">
@@ -84,7 +84,7 @@ export default function ProjectForm({ project = {} }) {
             id="projectAppUrl"
             placeholder="Project App Url"
             value={formInput.projectAppUrl || ''}
-            onChange={(e) => handleChange(e)}
+            onChange={handleChange}
           />
         </div>
         <div className="form-group">
@@ -96,7 +96,7 @@ export default function ProjectForm({ project = {} }) {
             id="projectDescription"
             placeholder="Project Description"
             value={formInput.description || ''}
-            onChange={(e) => handleChange(e)}
+            onChange={handleChange}
           />
         </div>
         <div className="form-group">
@@ -108,7 +108,7 @@ export default function ProjectForm({ project = {} }) {
             id="githubUrl"
             placeholder="Github Url"
             value={formInput.githubUrl || ''}
-            onChange={(e) => handleChange(e)}
+            onChange={handleChange}
           />
         </div>
 
