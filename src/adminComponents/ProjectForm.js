@@ -119,5 +119,7 @@ export default function ProjectForm({ project = {} }) {
 }
 
 ProjectForm.propTypes = {
-  project: PropTypes.shape({}).isRequired,
+  project: PropTypes.shape({}),
 };
+
+ProjectForm.defaultProps = { project: {} };
