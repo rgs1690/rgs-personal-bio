@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import EditProjectView from '../adminComponents/EditProjectView';
 import ProjectForm from '../adminComponents/ProjectForm';
+import AdminEditView from '../adminComponents/AdminEditView';
 
 export default function AdminRoutes({ user }) {
   return (
@@ -12,7 +13,8 @@ export default function AdminRoutes({ user }) {
         path="/projectForm"
         component={() => <ProjectForm user={user} />}
       />
-      <Route exact path="/editProjectForm" component={EditProjectView} />
+      <Route exact path="/editProjectView" component={EditProjectView} />
+      <Route exact path="/adminEditView/:key" component={AdminEditView} />
     </Switch>
   );
 }
