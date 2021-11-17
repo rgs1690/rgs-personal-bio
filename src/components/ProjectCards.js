@@ -13,10 +13,20 @@ export default function ProjectCards({ project }) {
         <div className="card-body">
           <h5 className="card-title">{project.projectName}</h5>
           <p className="card-text">{project.description}</p>
-          <a href={project.projectAppUrl} className="btn btn-primary">
+          <a
+            href={project.projectAppUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
             Deployed App
           </a>
-          <a href={project.githubUrl} className="btn btn-primary">
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
             Github
           </a>
         </div>
