@@ -1,5 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 import Tech from '../components/Tech';
+
+const TechStyle = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10em;
+
+  Figure {
+    margin: 3em;
+  }
+`;
 
 export default function TechView() {
   const techArray = [
@@ -47,9 +60,11 @@ export default function TechView() {
 
   return (
     <div>
-      {techArray.map((tech) => (
-        <Tech tech={tech} key={tech.id} />
-      ))}
+      <TechStyle>
+        {techArray.map((tech) => (
+          <Tech tech={tech} key={tech.id} />
+        ))}
+      </TechStyle>
     </div>
   );
 }

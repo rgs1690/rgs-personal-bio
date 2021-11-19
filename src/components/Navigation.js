@@ -1,27 +1,37 @@
 import React from 'react';
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+// import styled from 'styled-components';
 import { signOutUser, signInUser } from '../api/auth';
 
+// const NavStyle = styled.div`
+// Nav {
+//   display: flex;
+//   flex-flow: row wrap;
+//   justify-content: right;
+// }
+
+// `;
 export default function Navigation({ user }) {
   return (
-    <div>
-      <Nav>
-        <NavItem>
-          <NavLink href="/">Home</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/about">About</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/projects">Projects</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/tech">Tech</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="/contact">Contact Me</NavLink>
-        </NavItem>
+    <>
+      <p className="text-center mt-4 mb-4" />
+      <Nav className="justify-content-end" activeKey="/home">
+        <Nav.Item>
+          <Nav.Link href="/">Home</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/about">About</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/projects">Projects</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/tech">Tech</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/contact">Contact Me</Nav.Link>
+        </Nav.Item>
         {user ? (
           <button
             onClick={signOutUser}
@@ -40,8 +50,7 @@ export default function Navigation({ user }) {
           </button>
         )}
       </Nav>
-      <hr />
-    </div>
+    </>
   );
 }
 Navigation.propTypes = {
