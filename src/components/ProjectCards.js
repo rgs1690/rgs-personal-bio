@@ -17,7 +17,7 @@ export default function ProjectCards({ project }) {
             href={project.projectAppUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary"
+            className="btn btn-secondary text-dark"
           >
             Deployed App
           </a>
@@ -25,7 +25,7 @@ export default function ProjectCards({ project }) {
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary"
+            className="btn btn-secondary text-dark"
           >
             Github
           </a>
