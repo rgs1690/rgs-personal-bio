@@ -18,13 +18,13 @@ const ProjectStyle = styled.div`
   .card {
     width: 400px;
     text-align: center;
-    background-color: transparent;
+    background-color: white;
     border: 0;
   }
   .btn {
     margin: 5px;
     background: transparent;
-    border: 0;
+    border: 1px solid black;
   }
 `;
 export default function ProjectView() {

@@ -3,27 +3,54 @@ import styled from 'styled-components';
 import { Accordion } from 'react-bootstrap';
 
 const AboutStyle = styled.div`
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
+  }
+  .accordion {
+    margin-top: 2em;
+  }
+
   .accordionItem {
-    background-color: transparent !important;
     width: 50em;
-    margin-left: 60em;
-    margin-top: 0em;
+  }
+  img {
+    border-radius: 300px;
+    width: 25em;
+    height: 25em;
+    border: solid white 5px;
+    margin-left: 10em;
+  }
+  h1 {
+    margin-left: 10em;
+    font-size: 5em;
+  }
+  .accordionBody {
+    color: white;
   }
 `;
 export default function About() {
   return (
-    <div>
-      <AboutStyle>
+    <AboutStyle>
+      <div className="container">
+        <h1>About Me</h1>
         <img
           src="https://avatars.githubusercontent.com/u/78558344?v=4"
           className="img-fluid"
           alt="headShot"
         />
+
         <div>
-          <Accordion defaultActiveKey="0">
+          <Accordion className="accordion" defaultActiveKey="0">
             <Accordion.Item className="accordionItem" eventKey="0">
-              <Accordion.Header>Background</Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Header className="accordionHeader">
+                Background
+              </Accordion.Header>
+              <Accordion.Body classnName="accordionBody">
                 My name is Grace Sutherland, and I was born and raised in
                 Nashville, Tennessee. I graduated from MTSU with a Bachelor of
                 Fine Arts where I held a concentration in figurative oil
@@ -85,7 +112,7 @@ export default function About() {
             </Accordion.Item>
           </Accordion>
         </div>
-      </AboutStyle>
-    </div>
+      </div>
+    </AboutStyle>
   );
 }
