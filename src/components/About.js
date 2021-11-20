@@ -50,7 +50,7 @@ export default function About() {
               <Accordion.Header className="accordionHeader">
                 Background
               </Accordion.Header>
-              <Accordion.Body classnName="accordionBody">
+              <Accordion.Body>
                 My name is Grace Sutherland, and I was born and raised in
                 Nashville, Tennessee. I graduated from MTSU with a Bachelor of
                 Fine Arts where I held a concentration in figurative oil

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Typist from 'react-typist';
 
 const HomeStyle = styled.div`
   h1 {
@@ -19,8 +20,10 @@ export default function HomeView() {
   return (
     <HomeStyle>
       <div>
-        <h1>Grace Sutherland</h1>
-        <h2>Front-End Software Developer</h2>
+        <Typist>
+          <h1>Grace Sutherland</h1>
+          <h2>Front-End Software Developer</h2>
+        </Typist>
       </div>
     </HomeStyle>
   );
