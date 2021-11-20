@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import { createProject, updateProject } from '../api/data/projectsData';
-import ImageUpload from './ImageUpload';
 
 const initialState = {
   projectName: '',
@@ -111,9 +110,6 @@ export default function ProjectForm({ project = {} }) {
             value={formInput.githubUrl || ''}
             onChange={handleChange}
           />
-        </div>
-        <div>
-          <ImageUpload />
         </div>
 
         <button type="submit" className="btn btn-primary">
