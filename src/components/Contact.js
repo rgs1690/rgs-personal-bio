@@ -33,7 +33,7 @@ export default function Contact() {
               alt="171x180"
               src="https://cdn.worldvectorlogo.com/logos/mail-ios.svg"
             />
-            rgs1690@gmail.com
+            <div>rgs1690@gmail.com</div>
           </ListGroup.Item>
           <ListGroup.Item className="figure">
             <a
