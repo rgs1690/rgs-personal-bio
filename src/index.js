@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 import firebase from 'firebase/app';
+import 'firebase/storage';
 import firebaseConfig from './api/apiKeys';
 import Initialize from './Initialize';
 import reportWebVitals from './reportWebVitals';

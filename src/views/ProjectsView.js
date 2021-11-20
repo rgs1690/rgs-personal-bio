@@ -20,6 +20,7 @@ const ProjectStyle = styled.div`
     text-align: center;
     background-color: white;
     border: 0;
+    margin-bottom: 2em;
   }
   .btn {
     margin: 5px;
