@@ -2,5 +2,9 @@
 @import 'globals';
 
 body {
-  background-color: $favColor !important;
+  background: url(https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFpbnQlMjBkcmlwfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80) no-repeat !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
