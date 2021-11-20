@@ -11,6 +11,7 @@ const ContactStyle = styled.div`
     margin-top: 5em;
     border: 0 !important;
     background-color: transparent !important;
+    border-radius: 200px;
   }
   img {
     width: 171px;
