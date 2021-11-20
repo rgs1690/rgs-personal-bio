@@ -22,6 +22,10 @@ export default function HomeView() {
       <div>
         <Typist>
           <h1>Grace Sutherland</h1>
+          <h2>Painter</h2>
+          <Typist.Backspace count={7} delay={300} />
+          <h2>Baker</h2>
+          <Typist.Backspace count={5} delay={300} />
           <h2>Front-End Software Developer</h2>
         </Typist>
       </div>

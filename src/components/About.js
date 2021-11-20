@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Accordion } from 'react-bootstrap';
+import Typist from 'react-typist';
 
 const AboutStyle = styled.div`
   .container {
@@ -37,7 +38,9 @@ export default function About() {
   return (
     <AboutStyle>
       <div className="container">
-        <h1>About Me</h1>
+        <Typist>
+          <h1>About Me</h1>
+        </Typist>
         <img
           src="https://avatars.githubusercontent.com/u/78558344?v=4"
           className="img-fluid"
