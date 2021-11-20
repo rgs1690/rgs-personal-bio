@@ -10,10 +10,12 @@ const ContactStyle = styled.div`
     margin-right: auto;
     margin-top: 5em;
     border: 0 !important;
+    background-color: transparent !important;
   }
-  .figure {
-    border: 0 !important;
-    background-color: transparent;
+  img {
+    width: 171px;
+    height: 180px;
+    border: 0;
     margin: 1em;
   }
 `;
@@ -34,33 +36,28 @@ export default function Contact() {
             rgs1690@gmail.com
           </ListGroup.Item>
           <ListGroup.Item className="figure">
-            <Figure.Image
-              width={171}
-              height={180}
-              alt="171x180"
-              src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"
-            />
             <a
-              href="https://www.linkedin.com/in/grace-sutherland4724/ "
+              href="https://www.linkedin.com/in/grace-sutherland4724/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
             >
-              Connect with me!
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg"
+                target="_blank"
+                alt="HTML tutorial"
+              />{' '}
             </a>
           </ListGroup.Item>
           <ListGroup.Item className="figure">
-            <Figure.Image
-              width={171}
-              height={180}
-              alt="171x180"
-              src="https://cdn.worldvectorlogo.com/logos/github-icon.svg"
-            />
             <a
               href="https://github.com/rgs1690"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
             >
-              Check out my work!
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/github-icon.svg"
+                alt="githublogo"
+              />{' '}
             </a>
           </ListGroup.Item>
         </ListGroup>
