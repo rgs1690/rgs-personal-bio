@@ -10,22 +10,27 @@ const ProjectStyle = styled.div`
   justify-content: space-evenly;
   margin-top: 15em;
   img {
-    width: 400px;
+    width: 300px;
+    margin: auto;
+    margin-top: 5px;
     height: 200px;
     object-fit: cover;
     border: 1px solid black;
+    border-radius: 100px;
   }
   .card {
     width: 400px;
     text-align: center;
     background-color: white;
-    border: 0;
+    border: 1px solid black;
     margin-bottom: 2em;
+    border-radius: 150px;
   }
   .btn {
     margin: 5px;
     background: transparent;
     border: 1px solid black;
+    border-radius: 40px;
   }
 `;
 export default function ProjectView() {
