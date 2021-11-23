@@ -74,10 +74,8 @@ export default function AboutMe() {
                   Nashville, Tennessee. I graduated from MTSU with a Bachelor of
                   Fine Arts where I held a concentration in figurative oil
                   painting. I supported myself through college and after by
-                  working in various bakeries in the Nashville area by baking
-                  and cake decorating. Cake decorating scratched that creative
-                  itch for me and I fully through myself into learning
-                  everything I could about it.
+                  baking and cake decorating in various bakeries in the
+                  Nashville area.
                 </Card>
               </div>
             </Collapse>
@@ -93,14 +91,26 @@ export default function AboutMe() {
             <Collapse in={open2} dimension="width">
               <div id="example-collapse-text">
                 <Card className="cardText" body style={{ width: '400px' }}>
-                  My name is Grace Sutherland, and I was born and raised in
-                  Nashville, Tennessee. I graduated from MTSU with a Bachelor of
-                  Fine Arts where I held a concentration in figurative oil
-                  painting. I supported myself through college and after by
-                  working in various bakeries in the Nashville area by baking
-                  and cake decorating. Cake decorating scratched that creative
-                  itch for me and I fully through myself into learning
-                  everything I could about it.
+                  COVID-19 hit the food and service industries hard. These
+                  events lead me to explore more stable and fulfilling career
+                  options. I wanted a career that I could use my problem-solving
+                  abilities and creative drive. When I dove into trying to
+                  create my own website for a side cake business, I traveled
+                  down a rabbit hole of HTML, CSS, and JavaScript tutorials and
+                  from there I was hooked. I knew that I would benefit from
+                  guided instruction, so I signed up for the Nashville Software
+                  School’s introductory jumpstart program. After just a couple
+                  of weeks I knew I wanted to dedicate myself to making software
+                  development my new career. I then applied and was accepted
+                  into Nashville Software School’s part time, full stack, web
+                  development E16 cohort. I am almost halfway through the year
+                  long program, and I have learned so much and cannot wait
+                  continue my learning through out the rest of my career. I have
+                  found that background in art has helped develop my eye for
+                  detail that is needed for programming as well as design
+                  knowledge for front-end development. My experience in the
+                  service industry has also made me an excellent team member and
+                  empathize with the user in all my applications.
                 </Card>
               </div>
             </Collapse>
