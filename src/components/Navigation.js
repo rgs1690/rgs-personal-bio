@@ -1,8 +1,6 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { signOutUser, signInUser } from '../api/auth';
 
 const NavStyle = styled.div`
   display: flex;
@@ -13,13 +11,7 @@ const NavStyle = styled.div`
     font-size: 2em;
     font-style: bold;
   }
-  .btn {
-    background-color: transparent;
-    border: 0;
-    color: transparent;
-  }
-
-    @media only screen and (max-width:600px) {
+ @media only screen and (max-width:600px) {
       .justify-content-end {
         font-size: .7em;
         justify-content: center;
@@ -31,7 +23,7 @@ const NavStyle = styled.div`
         margin-right: 5em;
       }
 `;
-export default function Navigation({ user }) {
+export default function Navigation() {
   return (
     <>
       <NavStyle>
@@ -61,28 +53,8 @@ export default function Navigation({ user }) {
               Contact Me
             </Nav.Link>
           </Nav.Item>
-          {user ? (
-            <button
-              onClick={signOutUser}
-              type="button"
-              className="btn btn-primary"
-            >
-              Admin SignOut
-            </button>
-          ) : (
-            <button onClick={signInUser} type="button" className="btn">
-              Admin SignIn
-            </button>
-          )}
         </Nav>
       </NavStyle>
     </>
   );
 }
-Navigation.propTypes = {
-  user: PropTypes.shape(PropTypes.obj),
-};
-
-Navigation.defaultProps = {
-  user: null,
-};
