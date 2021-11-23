@@ -12,22 +12,17 @@ const NavStyle = styled.div`
     font-style: bold;
   }
  @media only screen and (max-width:600px) {
-      .justify-content-end {
-        font-size: .7em;
-        justify-content: center;
-      }
-    @media only screen and (min-width:400px) {
-      .justify-content-end {
+      .navStyle {
         font-size: .5em;
         justify-content: center;
-        margin-right: 5em;
       }
+   
 `;
 export default function Navigation() {
   return (
     <>
       <NavStyle>
-        <Nav className="justify-content-end" activeKey="/home">
+        <Nav className="navStyle" activeKey="/home">
           <Nav.Item>
             <Nav.Link className="navItem" href="/">
               Home
