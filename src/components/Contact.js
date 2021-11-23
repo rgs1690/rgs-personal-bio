@@ -19,6 +19,12 @@ const ContactStyle = styled.div`
     border: 0;
     margin: 1em;
   }
+  @media only screen and (max-width: 600px) {
+    .ListGroup {
+      width: 20em;
+      margin-top: 1em;
+    }
+  }
 `;
 export default function Contact() {
   return (

@@ -32,6 +32,18 @@ const ProjectStyle = styled.div`
     border: 1px solid black;
     border-radius: 40px;
   }
+  @media only screen and (max-width: 600px) {
+    margin-top: 2em;
+    .card {
+      width: 350px;
+    }
+    img {
+      width: 250px;
+    }
+    .btn {
+      width: 6em;
+    }
+  }
 `;
 export default function ProjectView() {
   const [projects, setProjects] = useState([]);

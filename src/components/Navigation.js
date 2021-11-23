@@ -18,6 +18,18 @@ const NavStyle = styled.div`
     border: 0;
     color: transparent;
   }
+
+    @media only screen and (max-width:600px) {
+      .justify-content-end {
+        font-size: .7em;
+        justify-content: center;
+      }
+    @media only screen and (min-width:400px) {
+      .justify-content-end {
+        font-size: .5em;
+        justify-content: center;
+        margin-right: 5em;
+      }
 `;
 export default function Navigation({ user }) {
   return (
