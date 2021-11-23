@@ -15,6 +15,19 @@ const HomeStyle = styled.div`
     margin-right: 3em;
     font-size: 2em;
   }
+  @media only screen and (max-width:600px){
+    h1 {
+      text-align: right;
+      margin-top: 2em;
+      margin-right: .5em;
+      font-size: 2em;
+  }
+  h2 {
+    text-align: right;
+    margin-top: 1em;
+    margin-right: 1em;
+    font-size: 1.5em;
+  }
 `;
 export default function HomeView() {
   return (

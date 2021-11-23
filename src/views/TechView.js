@@ -12,6 +12,13 @@ const TechStyle = styled.div`
   Figure {
     margin: 3em;
   }
+  @media only screen and (max-width: 600px) {
+    margin-top: 1em;
+    justify-content: center;
+    .techImage {
+      width: 80px;
+    }
+  }
 `;
 
 export default function TechView() {

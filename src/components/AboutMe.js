@@ -20,6 +20,27 @@ const AboutStyle = styled.div`
     color: black;
     border: 1px solid black;
   }
+  @media only screen and (max-width:600px) {
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4em;
+  margin-top: 1em;
+  .information {
+    width: 100px;
+    margin-left: -4em;
+  }
+    img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1em;
+    }
+    .cardText{
+        font-size: 1em;
+        padding: 2em;
+    }
+  
 `;
 export default function AboutMe() {
   const [open, setOpen] = useState(false);
@@ -48,7 +69,7 @@ export default function AboutMe() {
           <div style={{ minHeight: '150px' }}>
             <Collapse in={open} dimension="width">
               <div id="example-collapse-text">
-                <Card body style={{ width: '400px' }}>
+                <Card className="cardText" body style={{ width: '400px' }}>
                   My name is Grace Sutherland, and I was born and raised in
                   Nashville, Tennessee. I graduated from MTSU with a Bachelor of
                   Fine Arts where I held a concentration in figurative oil
@@ -71,7 +92,7 @@ export default function AboutMe() {
           <div style={{ minHeight: '150px' }}>
             <Collapse in={open2} dimension="width">
               <div id="example-collapse-text">
-                <Card body style={{ width: '400px' }}>
+                <Card className="cardText" body style={{ width: '400px' }}>
                   My name is Grace Sutherland, and I was born and raised in
                   Nashville, Tennessee. I graduated from MTSU with a Bachelor of
                   Fine Arts where I held a concentration in figurative oil
@@ -94,7 +115,7 @@ export default function AboutMe() {
           <div style={{ minHeight: '150px' }}>
             <Collapse in={open3} dimension="width">
               <div id="example-collapse-text">
-                <Card body style={{ width: '400px' }}>
+                <Card className="cardText" body style={{ width: '400px' }}>
                   Email: rgs1690@gmail.com
                   <hr />
                   <a

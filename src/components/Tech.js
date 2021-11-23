@@ -6,7 +6,13 @@ export default function Tech({ tech }) {
   return (
     <div>
       <Figure>
-        <Figure.Image width={171} height={180} alt="171x180" src={tech.href} />
+        <Figure.Image
+          className="techImage"
+          width={171}
+          height={180}
+          alt="171x180"
+          src={tech.href}
+        />
       </Figure>
     </div>
   );
