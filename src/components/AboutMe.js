@@ -7,7 +7,7 @@ const AboutStyle = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin-top: 7em;
+  margin-top: 5em;
   img {
     border: 1px solid black;
     border-radius: 200px;
