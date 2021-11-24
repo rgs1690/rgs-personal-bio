@@ -1,82 +1,43 @@
-# React Template
-[![Netlify Status](https://api.netlify.com/api/v1/badges/339c4ae9-fc7f-41b4-9b49-2dab0a20eaba/deploy-status)](https://app.netlify.com/sites/react-template-21/deploys)
+# Grace Sutherland [![Netlify Status](https://api.netlify.com/api/v1/badges/70b50711-e922-4a65-ba01-c83d30a92c43/deploy-status)](https://app.netlify.com/sites/grace-sutherland/deploys)
+<img width="900" alt="HomePage" src="https://user-images.githubusercontent.com/78558344/143160998-1e904889-2174-4ce9-81a2-48ea52ce9d3b.png">
 
-[See Live Demo of this Template](https://react-template-21.netlify.app/)
+[View App](https://grace-sutherland.netlify.app)
 
-This template includes all the dependencies and set up needed for you to work within defined code standards and structure to get you up and running quickly.
 
-## Topics
-- [Get Started](#get-started)
-- [Starting the Project](#starting-the-project)
-- [Other important tidbits](#other-important-tidbits)
-    - [React Dev Tools](#react-dev-tools)
-    - [Using axios](#using-axios)
-    - [Deploying on Netlify](#deploying-on-netlify)
-___
+## About the Project
+This is my personal bio site. Here I am showing off some of my favorite projects I have made so far in my Nashville Software School front-end development program. I also have some of my bakground information, technologies I use, and my contact information. 
 
-## Get Started
-### Use Template
-#### 1. To get started, click the GREEN "Use this Template" button at the top of the repo
-![Use this Template](./documentation/usetemplate.png)
+## About the User
+- When the user first comes to the site they are brought to a home page that deplays my name and a navigation bar. 
+- The navigation can take the user to my About, Projects, Tech and Contact pages. 
 
-#### 2. Make sure YOUR github account is selected in the dropdown and name your project
-![Create Project](./documentation/createproject.png)
+## Features
 
-3. Clone your new repo to your local machine
-4. Go to the **NEXT** section
+- Users can view pages that display information about me, my projects, techonoliges I use, and my contact information.
+- Each of my projects have buttons that will direct the user to the github repo and the deployed app of that project.
+- The contact page has links that will direct the user to my linkedin and github profiles. 
+- As an admin, I can login and I have private routes that will take me to a form where I can create new projects. I can also access an admin only project page that will allow me to delete and update projects.
+- This site is responsive and mobile friendly.
 
-## Starting the Project
-1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name
-1. Open the `/public/index.html` file and change the `title` attribute to the name of your application
-1. Rename the `.env.local.sample` file to `.env.local` file. The final file name should be `.env.local`
-1. From your command line, be in the root directory and run `npm install` OR `npm i` for short
-1. From your command line, be in the root directory and run `npx husky install`
-1. To start your application, run `npm start`
+## Video Walkthrough of App
 
-### If you see this, you are set to go!
-![LIT](./documentation/lit-screen.png)
 
-**NOTES:** 
-- Changes you make to the project will make the browser reload on save...no more hard refresh unless something goes wrong.
+## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
+- [Check out the deployed site](https://grace-sutherland.netlify.app/)
+- [Wireframes](https://www.figma.com/file/7O8bvJQ6s5EeKXBBTkl3J4/Personal-Bio?node-id=0%3A1) 
+- [DataFlowChart](https://github.com/rgs1690/rgs-personal-bio/issues/2)
+- [Project Board](https://github.com/rgs1690/rgs-personal-bio/projects/1)
 
-## Other Important Tidbits
-### React Dev Tools
-From this time forward, you will be expected to have a clean console in order for your assignments to be approved. Use [React Developer Tools Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) to help with debugging.
-### Including Images with React
-If you have a folder of local images that you want to load into your code things get a little strange with webpack.  Remember the only way webpack knows about assets is if they are imported into your javascript files.  Even our CSS is not added until those files are imported into our javascript files.  Below is some sample code for how to load a local image file into your project
 
-```js
-import cat from './assets/cat.jpg';
+## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
+<img width="1148" alt="Your Alt" src="https://user-images.githubusercontent.com/78558344/143161065-01987fef-b41f-46b2-b0e3-8332902dd8b6.png">
+<img width="1148" alt="Your Alt" src="https://user-images.githubusercontent.com/78558344/143161120-5b539390-38b3-45a7-8375-a7e3c4dfc89c.png">
 
-<>
-  <img src=${cat} alt="picture of a cat"/>
-</>
+## Mobile Screenshots
+<img width="375" height="660" margin-right="10" alt="Your Alt" src="https://user-images.githubusercontent.com/78558344/143161195-e85f2219-27ec-4a4c-ade0-a7a5883081da.png">     <img width="375"  height="660" alt="Your Alt" src="https://user-images.githubusercontent.com/78558344/143161225-527a6bfe-0192-42c8-bb0a-14197d8e41da.png">
 
-```
-### Using Axios
-> For every file you will need to make an API request in, you will need to import Axios
-```js
-import axios from 'axios';
+## Contributors
+- [Grace Sutherland](https://github.com/rgs1690)
 
-const examplePromise = () => {
-  axios.get('http://localhost:3001/example')
-    .then((data) => {
-      console.warn(data);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-});
-```
 
-### Deploying on Netlify
 
-- Build Command: `yarn build`
-- Publish directory: `build`
-- **Add Environmental Variables (NOT REQUIRED for Apps that do not use API Keys, etc)**
-    - Any Enviromental variables you are using in your `.env.local` file should be added to Netlify. 
-        - Go to Site settings > Build & deploy > Environment > Environment variables and the keys and values there.
-- **Update Firebase URL Settings**
-    - In Firebase under Authentication select sign in methods, scroll to Authorized domains. Add your Netlify URL.
-# Your own learning
-If you are interested in setting up your own project for things outside of class, you can run the command to start a React project `npx create-react-app {APP_NAME}` and setup all the files and structures from scratch.
