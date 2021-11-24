@@ -20,7 +20,7 @@ This is my personal bio site. Here I am showing off some of my favorite projects
 - This site is responsive and mobile friendly.
 
 ## Video Walkthrough of App
-
+[View Loom Video](https://www.loom.com/share/d0b349844e954888ad4a2183cccbf919)
 
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
 - [Check out the deployed site](https://grace-sutherland.netlify.app/)
