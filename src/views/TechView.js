@@ -7,7 +7,7 @@ const TechStyle = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 10em;
+  margin-top: 5em;
 
   Figure {
     margin: 3em;

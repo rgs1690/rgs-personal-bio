@@ -8,7 +8,7 @@ const ProjectStyle = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 15em;
+  margin-top: 5em;
   img {
     width: 300px;
     margin: auto;
