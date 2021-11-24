@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { ListGroup, Figure } from 'react-bootstrap';
 
 const ContactStyle = styled.div`
+  margin-bottom: 5em;
   .ListGroup {
     width: 30em;
     text-align: center;
