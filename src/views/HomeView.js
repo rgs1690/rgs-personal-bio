@@ -21,12 +21,14 @@ const HomeStyle = styled.div`
       margin-top: 2em;
       margin-right: .5em;
       font-size: 2em;
+      color: white;
   }
   h2 {
     text-align: right;
     margin-top: 1em;
     margin-right: 1em;
     font-size: 1.5em;
+    color: white;
   }
 `;
 export default function HomeView() {
