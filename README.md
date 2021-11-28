@@ -25,7 +25,7 @@ This is my personal bio site. Here I am showing off some of my favorite projects
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
 - [Check out the deployed site](https://grace-sutherland.netlify.app/)
 - [Wireframes](https://www.figma.com/file/7O8bvJQ6s5EeKXBBTkl3J4/Personal-Bio?node-id=0%3A1) 
-- [DataFlowChart](https://github.com/rgs1690/rgs-personal-bio/issues/2)
+- [DataFlowChart](https://user-images.githubusercontent.com/78558344/141689554-a3e352e6-3add-456e-897d-697e14745524.png)
 - [Project Board](https://github.com/rgs1690/rgs-personal-bio/projects/1)
 
 
