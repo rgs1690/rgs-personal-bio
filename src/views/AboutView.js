@@ -5,7 +5,6 @@ import AboutMe from '../components/AboutMe';
 export default function AboutView() {
   return (
     <div>
-      {/* <About /> */}
       <AboutMe />
     </div>
   );
